@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: primary;
+  src: url("./assets/fonts/NeueMontreal-Regular.ttf");
+}
+
+@font-face {
+  font-family: secondary;
+  src: url("./assets/fonts/FoundersGrotesk-Semibold.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  color: #212121;
+}
+
+.landingpage {
+  background-color: #f1f1f1;
+}
+
+span {
+  border-bottom: 3px solid black;
+}
+
+.underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #138609;
+  transform-origin: rgb(0, 0, 0) right;
+  transition: transform 0.25s ease-out;
+}
+
+.underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
