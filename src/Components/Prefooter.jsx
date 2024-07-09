@@ -21,7 +21,7 @@ function Prefooter() {
       data-scroll
       data-scroll-section
       data-scroll-speed=".2"
-      className="w-full flex items-center justify-center h-[100vh] bg-[#cdea68] rounded-tl-3xl rounded-tr-3xl"
+      className="w-full flex items-center justify-center h-[120vh] bg-[#cdea68] rounded-tl-3xl rounded-tr-3xl"
     >
       <div className="relative w-full flex gap-10 items-center justify-center flex-col ">
         <h1 className="leading-[11vw] text-[15vw] text-zinc-800 text-center font-['secondary'] font-extrabold">
